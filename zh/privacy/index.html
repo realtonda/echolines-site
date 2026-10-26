@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>隐私政策 — EchoLines</title>
-<meta name="description" content="EchoLines 不收集任何个人数据，语音识别和翻译都在设备上完成。">
+<meta name="description" content="EchoLines 不收集任何个人数据，语音识别和翻译都在设备上完成，iCloud 同步使用你自己的 iCloud 账户。">
 <link rel="icon" href="/assets/icon.png">
 <link rel="alternate" hreflang="en" href="/privacy/">
 <link rel="stylesheet" href="/assets/style.css">
@@ -22,18 +22,19 @@
 
   <article>
     <h1>隐私政策</h1>
-    <p class="updated">生效日期：2026 年 10 月 11 日</p>
+    <p class="updated">生效日期：2026 年 10 月 26 日</p>
 
     <p>EchoLines 由 TONDA K.K.（以下称"我们"）开发。本政策说明你在 iPhone 和 iPad 上使用 EchoLines 时，你的信息会如何处理。</p>
 
     <h2>简要说明</h2>
-    <p>我们不收集、不存储、也不分享任何个人数据。EchoLines 没有账号，没有自己的服务器，不使用分析工具，不投放广告，也不做任何追踪。</p>
+    <p>我们不收集、不存储、也不分享任何个人数据。EchoLines 没有账号，没有自己的服务器，不使用分析工具，不投放广告，也不做任何追踪。如果你使用 iCloud 同步，你订阅的节目、播放进度和收藏的句子会保存在你自己的 iCloud 账户里，我们看不到。</p>
 
     <h2>在设备上处理</h2>
     <ul>
       <li>语音识别和翻译使用 Apple 的设备端框架。你的音频、字幕和译文只在你的设备上处理和保存。</li>
       <li>语音模型和翻译语言由 iOS / iPadOS 下载和管理，这部分适用 Apple 的隐私政策。</li>
-      <li>你的资料库、播放进度、收藏的句子和设置都保存在设备上的 App 中。它们会像其他 App 数据一样包含在设备备份里，删除 App 时一并删除。</li>
+      <li>跟读功能只在你于跟读页录音时使用麦克风。录音在设备上与原声比对，重新录音或离开页面时即被删除，不会上传，也不会保留。</li>
+      <li>你的资料库、播放进度、收藏的句子和设置都保存在设备上的 App 中。它们会像其他 App 数据一样包含在设备备份里，删除 App 时一并删除。打开 iCloud 同步时，其中一部分也会保存在你的 iCloud 账户里（见下文）。</li>
     </ul>
 
     <h2>App 发出的网络请求</h2>
@@ -44,11 +45,21 @@
     </ul>
     <p>这些请求都不会发给我们，也不包含任何能识别你的标识。</p>
 
+    <h2>iCloud 同步</h2>
+    <p>iCloud 同步让登录同一 Apple 账户的设备保持一致。它默认打开，可以在 App 的“设置 › iCloud 同步”中关闭。它使用 Apple 的 CloudKit，在你的 iCloud 私有数据库中属于本 App 的区域保存以下内容：</p>
+    <ul>
+      <li>你订阅的节目：订阅源地址、节目名、作者、封面地址、你为它选择的语言和单集顺序，以及订阅时间；</li>
+      <li>播放进度：哪一集、听到哪里、是否听完，以及更新时间；</li>
+      <li>收藏的句子：句子原文和译文、它在单集中的位置，以及单集和节目的标题；</li>
+      <li>播放进度和收藏的句子还会附带来源设备的随机标识，以及它是 iPhone 还是 iPad，以便 App 显示“iPhone 23:10”这样的提示。</li>
+    </ul>
+    <p>音频文件、字幕、录音和 App 设置不会同步。你的 iCloud 私有数据库属于你的 Apple 账户：我们无法读取，它占用你的 iCloud 存储空间，适用 Apple 的隐私政策。关闭同步后不再同步；如需删除已同步的数据，请在 iOS“设置”App 中 Apple 账户的 iCloud 存储空间里操作。</p>
+
     <h2>Wi-Fi 传输</h2>
     <p>Wi-Fi 传输让同一 Wi-Fi 下的电脑上传或下载音频。只有在"Wi-Fi 传输"页面打开时，设备上才会运行一个小型网页服务，并用 6 位访问码保护。文件直接在电脑和设备之间传输，不经过互联网。iOS 会为此功能请求本地网络权限。</p>
 
     <h2>通知</h2>
-    <p>如果你为某个节目打开了新单集通知，EchoLines 会在后台检查这个节目的订阅源并显示本地通知，不涉及任何推送服务或服务器。</p>
+    <p>如果你为某个节目打开了新单集通知，EchoLines 会在后台检查这个节目的订阅源并显示本地通知，不涉及任何推送服务或服务器。打开 iCloud 同步时，Apple 的推送服务会在你的数据于其他设备上发生变化时静默通知 App，这类消息不会在屏幕上显示。</p>
 
     <h2>儿童</h2>
     <p>EchoLines 不收集任何人的个人数据，包括儿童。</p>

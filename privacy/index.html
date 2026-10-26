@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — EchoLines</title>
-<meta name="description" content="EchoLines collects no personal data. Speech recognition and translation happen on your device.">
+<meta name="description" content="EchoLines collects no personal data. Speech recognition and translation happen on your device, and iCloud sync uses your own iCloud account.">
 <link rel="icon" href="/assets/icon.png">
 <link rel="alternate" hreflang="zh-Hans" href="/zh/privacy/">
 <link rel="stylesheet" href="/assets/style.css">
@@ -22,18 +22,19 @@
 
   <article>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective October 11, 2026</p>
+    <p class="updated">Effective October 26, 2026</p>
 
     <p>EchoLines is made by TONDA K.K. ("we"). This policy explains what happens to your information when you use the EchoLines app for iPhone and iPad.</p>
 
     <h2>The short version</h2>
-    <p>We do not collect, store or share any personal data. EchoLines has no account, no server of its own, no analytics, no advertising and no tracking.</p>
+    <p>We do not collect, store or share any personal data. EchoLines has no account, no server of its own, no analytics, no advertising and no tracking. If you use iCloud sync, your shows, playback positions and saved sentences are kept in your own iCloud account, where we cannot see them.</p>
 
     <h2>Processing on your device</h2>
     <ul>
       <li>Speech recognition and translation use Apple's on-device frameworks. Your audio, the subtitles and the translations are processed and stored only on your device.</li>
       <li>Speech models and translation languages are downloaded and managed by iOS / iPadOS. Those downloads are covered by Apple's privacy policy.</li>
-      <li>Your library, playback positions, saved sentences and settings are stored in the app on your device. They are included in your device backups like other app data, and deleted when you delete the app.</li>
+      <li>Shadowing uses the microphone only while you record on the Shadowing page. Your recording is compared with the original on your device and deleted when you record again or leave the page. It is never uploaded or kept.</li>
+      <li>Your library, playback positions, saved sentences and settings are stored in the app on your device. They are included in your device backups like other app data, and deleted when you delete the app. With iCloud sync on, some of them are also kept in your iCloud account (see below).</li>
     </ul>
 
     <h2>Network requests the app makes</h2>
@@ -44,11 +45,21 @@
     </ul>
     <p>None of these requests goes to us, and none includes an identifier for you.</p>
 
+    <h2>iCloud sync</h2>
+    <p>iCloud sync keeps your devices signed in to the same Apple Account in step. It is on by default and can be turned off in the app under Settings › iCloud Sync. It uses Apple's CloudKit and stores the following in the app's area of your private iCloud database:</p>
+    <ul>
+      <li>the shows you subscribe to: feed address, title, author, artwork address, the languages and episode order you chose for each, and when you subscribed;</li>
+      <li>playback positions: which episode, how far you got, whether it is played, and when;</li>
+      <li>saved sentences: the sentence and its translation, its place in the episode, and the episode and show titles;</li>
+      <li>for positions and saved sentences, a random identifier for the device they came from and whether it is an iPhone or iPad, so the app can show "iPhone 23:10".</li>
+    </ul>
+    <p>Audio files, subtitles, recordings and app settings are not synced. Your private iCloud database belongs to your Apple Account: we cannot read it, it counts toward your iCloud storage, and Apple's privacy policy applies. Turning sync off stops syncing. To delete the synced data, use your Apple Account's iCloud storage settings in the iOS Settings app.</p>
+
     <h2>Wi-Fi Transfer</h2>
     <p>Wi-Fi Transfer lets a computer on the same Wi-Fi network upload or download audio. It runs a small web server on your device only while the Wi-Fi Transfer screen is open, protected by a 6-digit access code. Files go directly between your computer and your device and never pass through the internet. iOS asks for local network permission for this feature.</p>
 
     <h2>Notifications</h2>
-    <p>If you turn on new-episode notifications for a show, EchoLines checks that show's feed in the background and shows a local notification. No push service or server is involved.</p>
+    <p>If you turn on new-episode notifications for a show, EchoLines checks that show's feed in the background and shows a local notification. No push service or server is involved. With iCloud sync on, Apple's push service silently tells the app when your data has changed on another device; these messages show nothing on screen.</p>
 
     <h2>Children</h2>
     <p>EchoLines does not collect personal data from anyone, including children.</p>
